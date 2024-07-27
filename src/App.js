@@ -50,23 +50,23 @@ const App = () => {
 
       {/* Section for buttons */}
       <section className="flex flex-col sm:flex-row justify-between mt-4">
-        <div className="ml-3 flex flex-row gap-4">
+        <div className='ml-3 flex flex-col gap-4 sm:flex-row'>
           <FilterButton
-            content={"Filter By Date"}
+            content={'Filter By Date'}
             values={dates}
             isButton={isDateButton}
             setIsButton={setIsDateButton}
-            filterType="date"
+            filterType='date'
           />
           <FilterButton
-            content={"Filter By Type"}
+            content={'Filter By Type'}
             values={searchtype}
             isButton={isTypeButton}
             setIsButton={setIsTypeButton}
-            filterType="type"
+            filterType='type'
           />
         </div>
-        <div className="mr-3 my-auto py-2 text-white ">
+        <div className="mr-3 my-auto py-2 text-white sm:flex-row ">
           <input
             type="search"
             className="btn-primary shadow-md"
