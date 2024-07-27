@@ -1,20 +1,21 @@
-import React from "react";
-import { convertTimestampToDate } from "../util/convertDate";
+import React from 'react';
+import { convertTimestampToDate } from '../util/convertDate';
 
 const Card = ({ item }) => {
   return (
-    <div className="flex flex-col p-2 m-2 bg-[#e0d9cf] border rounded-md shadow-md ">
-      <div className="items-center justify-center  ">
+    <div className='flex flex-col p-2 m-2 bg-[#e0d9cf] border rounded-md shadow-md '>
+      <div className='items-center justify-center  '>
         <img
-          className="w-[200px] h-[150px] rounded-lg object-cover  "
+          className='w-[200px] h-[150px] rounded-lg object-cover sm:w-[200px] sm:h-[150px] w-full h-full'
           src={item.image}
           alt={item.title}
         />
       </div>
-      <div className="m-2 flex flex-col items-start">
-        <div className="mb-2 text-wrap">
-          <h3 className="text-md font-medium">{item.title}</h3>
-          <p className="">{item.description}</p>
+
+      <div className='m-2 flex flex-col items-start'>
+        <div className='mb-2 text-wrap'>
+          <h3 className='text-md font-medium'>{item.title}</h3>
+          <p className=''>{item.description}</p>
         </div>
         <div>
           <p>Date: {convertTimestampToDate(item.date)}</p>
