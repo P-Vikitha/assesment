@@ -6,7 +6,7 @@ const Card = ({ item }) => {
     <div className="flex flex-col p-2 m-2 bg-[#e0d9cf] border rounded-md shadow-md ">
       <div className="items-center justify-center  ">
         <img
-          className="w-37 h-37  rounded-lg object-cover "
+          className="w-[200px] h-[150px] rounded-lg object-cover  "
           src={item.image}
           alt={item.title}
         />
